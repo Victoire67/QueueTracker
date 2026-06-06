@@ -2,10 +2,8 @@
 
 // --- SUPABASE CONFIGURATION ---
 // Replace these with your actual Project URL and Anon Key from Settings > API
-const SUPABASE_URL = 'https://dgpipgfetxonjjtknrvy.supabase.co';
-const SUPABASE_ANON_KEY ='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRncGlwZ2ZldHhvbmpqdGtucnZ5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc5MzA5MjIsImV4cCI6MjA5MzUwNjkyMn0.RPOsFBeGJzG5afIw5x279I_D63kU-C1xQqNJkna28Kw';
- 
-
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL ;
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { createClient } from '@supabase/supabase-js';
